@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  </head>
+  <body class="fade-in">
+    <div class="rose-container" id="roseContainer"></div>
+
+    <div class="container">
+      <div class="text-heading">
+        Happy Birthday my <span class="typing"></span>
+      </div>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/N6-0syjL9nU"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <button onclick="playConfetti()" id="openLetter">click this 🥺</button>
+      <button onclick="playConfetti()" id="confettiButton">yay 🎊</button>
+    </div>
+
+    <div id="letterModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p class="1">Happy Birthday my mother of my 2 children
+          <br />
+          Happy Birthday Mahal i wish you a happy and healthy life. Along with I LOVE YOU SO MUCH MY SUNSHINE my most favorite and pinakamahal kong person in the whole wide world
+          <br />
+          Thank you for loving and understanding me everyday especially since im not very good with processing my emotions and you're trying to help me get over my stuff and also making me happy overall
+          <br /> 
+          You are the best thing that has ever been mine i love you so much i hope ma appreciate mo na more ang sadiri mo and your birthday because yaon me palagi i love you mwahhhh
+          <br /> You taught me a lot and helped me alot and i would forever thank your for that now this day i want you to be always happy whenever bday mo<br />
+          along with always being you the happiest most cheerful and lovable na baby ko <br />
+          I love you always and forever and i will always love you forever and ever magiging stuck kana sako rahhh <br /> MWAHHH <br />Waken na big baby mo<br /></p>
+          
+          <span id="next-button">&#8594;</span>
+          <p> Balls</p> 
+          
+      </div>
+    </div>
+
+    <div class="sliding-images left-images">
+      <img
+        src="images/I LOVE YOU.png"
+        alt="Left Image 1"
+        id="leftImage1"
+        class="hidden left"
+      />
+      <img
+        src="images/I MISS YOU.png"
+        alt="Left Image 2"
+        id="leftImage2"
+        class="hidden left"
+      />
+      <img
+        src="images/HAPPY.png"
+        alt="Left Image 3"
+        id="leftImage3"
+        class="hidden left"
+      />
+    </div>
+    <div class="sliding-images right-images">
+      <img
+        src="images/BIRTHDAYY.png"
+        alt="Right Image 1"
+        id="rightImage1"
+        class="hidden right"
+      />
+      <img
+        src="images/mahal.png"
+        alt="Right Image 2"
+        id="rightImage2"
+        class="hidden right"
+      />
+      <img
+        src="images/loveyyy.png"
+        alt="Right Image 3"
+        id="rightImage3"
+        class="hidden right"
+      />
+    </div>
+
+    <audio
+      id="confettiSound"
+      src="music/confetti_sound.mp3"
+      preload="auto"
+    ></audio>
+    <audio id="buttonMusic" src="music/button_music.mp3" preload="auto"></audio>
+    <audio id="vineBoom" src="music/vine_boom.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>
